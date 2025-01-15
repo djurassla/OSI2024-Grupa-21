@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="65.0" prefWidth="1366.0" style="-fx-background-color: grey;">
+         <children>
+            <AnchorPane prefHeight="65.0" prefWidth="1366.0">
+               <children>
+                  <Label layoutX="173.0" layoutY="6.0" prefHeight="53.0" prefWidth="456.0" text="Korisnicka podrska / Home " textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+      <Pane layoutY="65.0" prefHeight="65.0" prefWidth="1366.0" style="-fx-background-color: #e6e6e6;">
+         <children>
+            <AnchorPane prefHeight="65.0" prefWidth="1366.0" />
+         </children>
+      </Pane>
+      <Button layoutX="37.0" layoutY="152.0" mnemonicParsing="false" onAction="#onLoginButtonClick" prefHeight="37.0" prefWidth="194.0" text="Log out" />
+      <Button fx:id="register" layoutX="264.0" layoutY="152.0" mnemonicParsing="false" onAction="#onLRegisterButtonClick" prefHeight="37.0" prefWidth="194.0" text="Register" />
+      <ImageView fx:id="message" fitHeight="36.0" fitWidth="42.0" layoutX="689.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true" />
+      <TableView fx:id="ticketTable" layoutX="14.0" layoutY="250.0" prefHeight="200.0" prefWidth="1317.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="descriptionColumn" prefWidth="617.9999694824219" text="Opis" />
+            <TableColumn fx:id="createdByColumn" prefWidth="127.0" text="Kreirao" />
+            <TableColumn fx:id="updatedByColumn" prefWidth="159.0" text="Azurirao" />
+            <TableColumn fx:id="assignedColumn" prefWidth="121.0" text="Dodjeljen" />
+            <TableColumn fx:id="statusColumn" prefWidth="398.0" text="Status" />
+        </columns>
+      </TableView>
+      <Button fx:id="addTicket" layoutX="1137.0" layoutY="152.0" mnemonicParsing="false" onAction="#onAddTicketButtonClick" prefHeight="37.0" prefWidth="194.0" text="Dodaj tiket" />
+      <Button fx:id="settings" layoutX="920.0" layoutY="153.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="194.0" text="Podesavanja" />
+      <Button fx:id="statistic" layoutX="710.0" layoutY="153.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="194.0" text="Statistika" />
+      <Button fx:id="inDevelopment" layoutX="14.0" layoutY="481.0" mnemonicParsing="false" onAction="#oninDevelopmentButtonClick" prefHeight="37.0" prefWidth="194.0" text="U izradi" />
+      <Button fx:id="backToKorisnik" layoutX="231.0" layoutY="481.0" mnemonicParsing="false" onAction="#onBackToKorisnikButtonClick" prefHeight="37.0" prefWidth="194.0" text="Vrati korisniku" />
+      <Button fx:id="closeTicket" layoutX="458.0" layoutY="481.0" mnemonicParsing="false" onAction="#onClosedButtonClick" prefHeight="37.0" prefWidth="194.0" text="Zatvori tiket" />
+   </children>
+</Pane>
